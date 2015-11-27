@@ -1,0 +1,33 @@
+﻿<!--
+ * Word Play is basic two player game that removes the letters from a word
+ * where the other play is the guess the original word.
+ * Copyright (C) 2014  Philip
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see<http://www.gnu.org/licenses/> .
+-->
+<Window x:Class="Word_Play_2.welcome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Welcome" Height="300" Width="500">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="One or two players:" VerticalAlignment="Top" Margin="10,61,0,0" FontSize="20"/>
+        <ComboBox x:Name="cbox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="187,61,0,0" FontSize="20" SelectionChanged="ComboBox_SelectionChanged"/>
+        <Button x:Name="sButton" Content="Play Now" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="326,61,0,0" Height="33" Click="sButton_Click"/>
+        <TextBlock x:Name="Player_One_Name" HorizontalAlignment="Left" Text="Player One Name:" VerticalAlignment="Top" Margin="10,131,0,0" FontSize="20"/>
+        <TextBlock x:Name="Player_Two_Name" HorizontalAlignment="Left" Text="Player Two Name:" VerticalAlignment="Top" Margin="10,171,0,0" FontSize="20"/>
+        <TextBox x:Name="p1Name"   HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="190,131,0,0" FontSize="20" TextChanged="TextChanged"/>
+        <TextBox x:Name="p2Name"   HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="190,171,0,0" FontSize="20" TextChanged="TextChanged"/>
+        <Button x:Name="mButton" Content="Play Now" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="326,171,0,0" Height="27" RenderTransformOrigin="0.682,3.109" Click="mButton_Click"/>
+    </Grid>
+</Window>

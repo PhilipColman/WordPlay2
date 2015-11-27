@@ -1,0 +1,33 @@
+﻿<!--
+ * Word Play is basic two player game that removes the letters from a word
+ * where the other play is the guess the original word.
+ * Copyright (C) 2014  Philip
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see<http://www.gnu.org/licenses/> .
+-->
+<Window x:Class="Word_Play_2.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        Title="Word Play 2" Height="768" Width="1336" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <TextBlock x:Name="display" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,100,0,0" FontSize="30"/>
+        <TextBox x:Name="newWord" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,150,0,0" FontSize="40" Width="300" TextChanged="newWord_TextChanged" KeyDown="newWord_KeyDown"/>
+        <Button x:Name="setWord" Content="Set Word" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="430,150,0,0" FontSize="40" Padding="4,0,4,0" Click="setWord_Click"/>
+        <TextBox x:Name="guess" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="100,600,0,0" FontSize="40" TextChanged="TextBox_TextChanged" KeyDown="guess_KeyDown"/>
+        <Button x:Name="Guess" Content="Guess" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="420,600,0,0" FontSize="40" Padding="4,0,4,0" Click="Guess_Click"/>
+        <TextBlock x:Name="Score" HorizontalAlignment="Right" Text="TextBlock" VerticalAlignment="Top" Margin="0,57,20,0" FontSize="40"/>
+        <Button x:Name="Close" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" RenderTransformOrigin="1.24,18.1" Margin="0,10,20,0" Height="50" FontSize="35" Click="Close_Click"/>
+
+    </Grid>
+</Window>
